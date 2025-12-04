@@ -1,10 +1,15 @@
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:label="charity_donation_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 
-        <!-- AdMob App ID - SEPARATE meta-data block -->
+        <!-- AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5038987254038729~7686850762"/>
@@ -34,10 +39,37 @@
             android:value="2" />
     </application>
 
+    <!-- UPI App Queries -->
     <queries>
+        <!-- Google Pay -->
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        
+        <!-- PhonePe -->
+        <package android:name="com.phonepe.app" />
+        
+        <!-- Paytm -->
+        <package android:name="net.one97.paytm" />
+        
+        <!-- Amazon Pay -->
+        <package android:name="in.amazon.mShop.android.shopping" />
+        
+        <!-- BHIM UPI -->
+        <package android:name="in.org.npci.upiapp" />
+        
+        <!-- WhatsApp Pay -->
+        <package android:name="com.whatsapp" />
+        
+        <!-- CRED -->
+        <package android:name="com.dreamplug.androidapp" />
+        
+        <!-- Mobikwik -->
+        <package android:name="com.mobikwik_new" />
+        
+        <!-- Generic UPI intent -->
         <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="upi" />
         </intent>
     </queries>
 </manifest>
+

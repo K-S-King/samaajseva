@@ -12,7 +12,20 @@
           "package_name": "com.example.charity_donation_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "491979538279-nb3mtoc8b2i085go2ion276rfv4866dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charity_donation_app",
+            "certificate_hash": "1ffd45ac07775ccbe8a5270308d077cdcd150138"
+          }
+        },
+        {
+          "client_id": "491979538279-u8pu7ag1vnigf6r0p1g99lv8btamqut9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBgt0hPMEWkcqTNBONJRyOrP1Q-QL7VfKY"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491979538279-u8pu7ag1vnigf6r0p1g99lv8btamqut9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "491979538279-nr72nrtv6cbd03om1ugend0a4mmmhof5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.charityDonationApp"
+              }
+            }
+          ]
         }
       }
     }
